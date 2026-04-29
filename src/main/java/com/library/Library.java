@@ -1,7 +1,6 @@
 package com.library;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 // Storing the books
 public class Library {
@@ -26,4 +25,23 @@ public class Library {
 
         return results;
     }
+        // Book Borrow logic - Create UI to wire up correctly
+ //   public boolean borrowBook(String title) {
+ //       for (Book book : books) {
+ //           if (book.getId() == bookId) {
+ //               if (book.isBorrowed()) {
+ //                   return false;
+ //               }
+ //
+ //               book.setIsBorrowed(true);
+ //               return true;
+ //           }
+
+  //          return false;
+ //       }
+
+  //      return false;
+    }
+
+
 }
