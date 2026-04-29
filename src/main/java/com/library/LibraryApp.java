@@ -35,11 +35,29 @@ public class LibraryApp {
 
                     for (Book book : allBooks) {
                         System.out.println(book);
+
+                   //     if (next == 1) {
+                            // Flow to be added later
+                //        }
                     }
                     break;
 
                 case 2:
-                    System.out.println("Searching for a book...");
+                    System.out.println("Enter search term: ");
+                    String query = scanner.nextLine();
+
+                    ArrayList<Book> matches = library.searchBooks(query);
+
+                    if (matches.isEmpty()) {
+                        System.out.println("No books found.");
+                    }
+                    else {
+                        System.out.println("Search results: ");
+                        for (Book book : matches) {
+                            System.out.println(book);
+                        }
+
+                    }
                     break;
 
                 case 3:
