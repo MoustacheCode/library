@@ -1,26 +1,24 @@
 import com.library.Book;
-import com.opencsv.CSVReader;
-import com.opencsv.bean.CsvToBeanBuilder;
+import com.library.CsvUtils;
 
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.util.ArrayList;
 
 public static void main(String[] args) throws FileNotFoundException {
 
+    // Book Data
+    ArrayList<Book> books = CsvUtils.loadBooks();
 
-    FileReader fileReader = new FileReader("src/main/java/resources/books_new.csv");
-    CSVReader csvReader = new CSVReader(fileReader);
-
-    ArrayList<Book> bookList = new ArrayList<>(new CsvToBeanBuilder<Book>(csvReader).withType(Book.class).withIgnoreLeadingWhiteSpace(true).build().stream().toList());
-
-    for (Book model: bookList) {
+    for (Book b: books) {
         System.out.println("---");
-        System.out.println(model.getAuthor());
-        System.out.println(model.getTitle());
-        System.out.println(model.getGenre());
-        System.out.println(model.getSubGenre());
-        System.out.println(model.getPublisher());
-        System.out.println(model.isBorrowed());
+
+        System.out.println("Author: " + b.getAuthor());
+        System.out.println("Title: " + b.getTitle());
+        System.out.println("Genre: " + b.getGenre());
+        System.out.println("SubGenre: " + b.getSubGenre());
+        System.out.println("Publisher: " + b.getPublisher());
+        System.out.println("ID: " + b.getId());
+        System.out.println(b.isBorrowed());
+
     }
 }

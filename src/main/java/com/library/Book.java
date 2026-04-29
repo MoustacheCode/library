@@ -4,26 +4,36 @@ import com.opencsv.bean.CsvBindByName;
 
 public class Book {
 
-    @CsvBindByName(column = "title", required = true)
+    @CsvBindByName(column = "Title", required = true)
     private String title;
 
-    @CsvBindByName(column = "author")
+    @CsvBindByName(column = "Author")
     private String author;
 
-    @CsvBindByName(column = "genre", required = true)
+    @CsvBindByName(column = "Genre", required = true)
     private String genre;
 
-    @CsvBindByName(column = "subGenre", required = true)
+    @CsvBindByName(column = "SubGenre", required = true)
     private String subGenre;
 
-    @CsvBindByName(column = "height", required = true)
+    @CsvBindByName(column = "Height", required = true)
     private int height;
 
-    @CsvBindByName(column = "publisher")
+    @CsvBindByName(column = "Publisher")
     private String publisher;
 
-    @CsvBindByName(column = "isBorrow")
-    private boolean isBorrowed;
+
+    private boolean isBorrowed = false;
+
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Book() {
 
@@ -94,6 +104,7 @@ public class Book {
         this.height = height;
         this.publisher = publisher;
         this.isBorrowed = isBorrowed;
+        this.id = id;
     }
 
 }

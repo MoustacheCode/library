@@ -1,6 +1,5 @@
 package com.library;
 
-import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvToBeanBuilder;
 
 import java.io.BufferedReader;
@@ -19,6 +18,11 @@ public class CsvUtils {
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
         List<Book> books = new CsvToBeanBuilder<Book>(reader).withType(Book.class).withIgnoreLeadingWhiteSpace(true).build().parse();
+
+        int nextId = 1;
+        for(Book b : books) {
+            b.setId(nextId++);
+        }
 
         return new ArrayList<>(books);
     }
