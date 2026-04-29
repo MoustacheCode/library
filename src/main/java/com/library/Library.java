@@ -10,4 +10,8 @@ public class Library {
     public Library(ArrayList<Book> books) {
         this.books = books;
     }
+
+    public ArrayList<Book> listBooks() {
+        return books;
+    }
 }

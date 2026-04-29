@@ -30,7 +30,12 @@ public class LibraryApp {
             switch(choice) {
                 case 1:
                     System.out.println("Listing all books...");
-                    // Implement method call later
+
+                    ArrayList<Book> allBooks = library.listBooks();
+
+                    for (Book book : allBooks) {
+                        System.out.println(book);
+                    }
                     break;
 
                 case 2:
