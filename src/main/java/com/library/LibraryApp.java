@@ -63,15 +63,12 @@ public class LibraryApp {
                 case 3:
                     System.out.println("Creating User...");
 
-
                     System.out.println("Please enter a Username: ");
 
-                    String userName = scanner.nextLine();
-
+                    String userCreate = scanner.nextLine();
                     System.out.println("Please enter a Password: ");
 
-                    String password = scanner.nextLine();
-
+                    String passCreate = scanner.nextLine();
                     System.out.println("User created!");
 
                     break;
@@ -80,6 +77,16 @@ public class LibraryApp {
 
                 case 4:
                     System.out.println("Logging in...");
+
+                    System.out.println("Enter username: ");
+                    String username = scanner.nextLine();
+
+                    System.out.println("Enter password: ");
+                    String password = scanner.nextLine();
+
+                    System.out.println("Login successful!");
+                    userMenu();
+
 
                 case 5:
                     System.out.println("Thanks for coming! Goodbye!");
@@ -91,5 +98,55 @@ public class LibraryApp {
             }
         }
 
+    }
+
+    public void userMenu() {
+        boolean loggedIn = true;
+
+        while(loggedIn) {
+            System.out.println("=== | User Menu | ===");
+            System.out.println("[1] Search for a Book");
+            System.out.println("[2] Borrow a Book");
+            System.out.println("[3] Return a Book");
+            System.out.println("[4] Logout");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
+            switch(choice) {
+                case 1:
+                    System.out.println("Enter search term: ");
+                    String query = scanner.nextLine();
+
+                    ArrayList<Book> matches = library.searchBooks(query);
+
+                    if (matches.isEmpty()) {
+                        System.out.println("No books found.");
+                    }
+                    else {
+                        System.out.println("Search results: ");
+                        for (Book book : matches) {
+                            System.out.println(book);
+                        }
+
+                    }
+                    break;
+
+                case 2:
+                    System.out.println("Please select a book");
+
+                    break;
+
+                case 3:
+                    System.out.println("Which book are you returning?");
+
+                    break;
+
+                case 4: loggedIn = false; break;
+
+                default:
+                    throw new IllegalStateException("Invalid option");
+            }
+        }
     }
 }
