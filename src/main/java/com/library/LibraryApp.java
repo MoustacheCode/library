@@ -63,11 +63,26 @@ public class LibraryApp {
                 case 3:
                     System.out.println("Creating User...");
 
+
+                    System.out.println("Please enter a Username: ");
+
+                    String userName = scanner.nextLine();
+
+                    System.out.println("Please enter a Password: ");
+
+                    String password = scanner.nextLine();
+
+                    System.out.println("User created!");
+
+                    break;
+
+
+
                 case 4:
                     System.out.println("Logging in...");
 
                 case 5:
-                    System.out.println("Goodbye!");
+                    System.out.println("Thanks for coming! Goodbye!");
                     running = false;
                     break;
 
