@@ -25,7 +25,7 @@ public class Library {
 
         return results;
     }
-      //   Book Borrow logic - Create UI to wire up correctly
+      //   Book Borrow Method - Create UI to wire up correctly
     public boolean borrowBook(String title, int bookId) {
         for (Book book : books) {
             // Match ID
@@ -39,7 +39,7 @@ public class Library {
 
             }
             // Match title
-            if (title != null && book.getTitle().equalsIgnoreCase(title) ) {
+            if (title != null && book.getTitle().toLowerCase().contains(title.toLowerCase()) ) {
 
                 if (book.isBorrowed()) {
                     return false; // borrowed
@@ -56,3 +56,5 @@ public class Library {
 
 
 }
+
+

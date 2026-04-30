@@ -133,7 +133,27 @@ public class LibraryApp {
                     break;
 
                 case 2:
-                    System.out.println("Please select a book");
+                    System.out.println("Enter book ID or Title: ");
+                    String borrow = scanner.nextLine();
+
+                    int id = 0;
+                    String title = null;
+
+                    try {
+                        id = Integer.parseInt(borrow); // Check for Int ID
+                    }
+                    catch (NumberFormatException e) { // Here for the title
+                        title = borrow;
+                    }
+
+                    boolean success = library.borrowBook(title, id);
+
+                    if (success) {
+                        System.out.println("Book borrowed successfully!");
+                    }
+                    else {
+                        System.out.println("This book is currently unavailable. Please check back soon!");
+                    }
 
                     break;
 
