@@ -25,23 +25,34 @@ public class Library {
 
         return results;
     }
-        // Book Borrow logic - Create UI to wire up correctly
- //   public boolean borrowBook(String title) {
- //       for (Book book : books) {
- //           if (book.getId() == bookId) {
- //               if (book.isBorrowed()) {
- //                   return false;
- //               }
- //
- //               book.setIsBorrowed(true);
- //               return true;
- //           }
+      //   Book Borrow logic - Create UI to wire up correctly
+    public boolean borrowBook(String title, int bookId) {
+        for (Book book : books) {
+            // Match ID
+            if (bookId > 0 && book.getId() == bookId) {
+                if (book.isBorrowed()) {
+                    return false; //borrowed
+                }
 
-  //          return false;
- //       }
+                book.setIsBorrowed(true);
+                return true;
 
-  //      return false;
-  //  }
+            }
+            // Match title
+            if (title != null && book.getTitle().equalsIgnoreCase(title) ) {
+
+                if (book.isBorrowed()) {
+                    return false; // borrowed
+                }
+
+                book.setIsBorrowed(true);
+                return true; // success
+            }
+
+        }
+        // no books found
+        return false;
+   }
 
 
 }
