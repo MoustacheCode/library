@@ -1,13 +1,19 @@
 package com.library;
 
 import java.util.ArrayList;
+import java.util.List;
 
 // Storing the books
 public class Library {
+
     private ArrayList<Book> books;
 
     public Library(ArrayList<Book> books) {
         this.books = books;
+    }
+
+    public ArrayList<Book> getBooks() {
+        return books;
     }
 
     public ArrayList<Book> listBooks() {

@@ -146,9 +146,10 @@ public class LibraryApp {
                         title = borrow;
                     }
 
-                    boolean success = library.borrowBook(title, id);
+                    boolean success = library.borrowBook(title, id); // When successful - Returns borrowBook method
 
                     if (success) {
+                        CsvUtils.saveBooks(library.getBooks());
                         System.out.println("Book borrowed successfully!");
                     }
                     else {

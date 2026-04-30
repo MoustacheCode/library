@@ -1,0 +1,212 @@
+AUTHOR,GENRE,HEIGHT,ID,ISBORROWED,PUBLISHER,SUBGENRE,TITLE
+"Goswami, Jaideva",tech,228,1,false,Wiley,signal_processing,Fundamentals of Wavelets
+"Foreman, John",tech,235,2,false,Wiley,data_science,Data Smart
+"Hawking, Stephen",tech,197,3,false,Penguin,mathematics,God Created the Integers
+"Dubner, Stephen",science,179,4,false,HarperCollins,economics,Superfreakonomics
+"Said, Edward",nonfiction,197,5,false,Penguin,history,Orientalism
+"Vapnik, Vladimir",tech,230,6,false,Springer,data_science,"Nature of Statistical Learning Theory, The"
+"Menon, V P",nonfiction,217,7,false,Orient Blackswan,history,Integration of the Indian States
+"Mlodinow, Leonard",science,197,8,false,Penguin,mathematics,"Drunkard's Walk, The"
+"Shih, Frank",tech,241,9,false,CRC,signal_processing,Image Processing & Mathematical Morphology
+"Konnikova, Maria",nonfiction,240,10,false,Penguin,psychology,How to Think Like Sherlock Holmes
+Sebastian Gutierrez,tech,230,11,false,Apress,data_science,Data Scientists at Work
+"Vonnegut, Kurt",fiction,198,12,false,Random House,classic,Slaughterhouse Five
+"Villani, Cedric",science,234,13,false,Bodley Head,mathematics,Birth of a Theorem
+"Sussman, Gerald",tech,240,14,false,MIT Press,computer_science,Structure & Interpretation of Computer Programs
+"Eraly, Abraham",nonfiction,238,15,false,Penguin,history,"Age of Wrath, The"
+"Kafka, Frank",fiction,198,16,false,Random House,classic,"Trial, The"
+"Pratt, John",tech,236,17,false,MIT Press,data_science,Statistical Decision Theory'
+"Nisbet, Robert",tech,242,18,true,Apress,data_science,Data Mining Handbook
+"Wells, H. G.",fiction,180,19,false,Penguin,novel,"New Machiavelli, The"
+"Heisenberg, Werner",philosophy,197,20,false,Penguin,science,Physics & Philosophy
+"Oram, Andy",tech,232,21,false,O'Reilly,computer_science,Making Software
+"Tao, Terence",tech,248,22,false,HBA,mathematics,"Analysis, Vol I"
+"Conway, Drew",tech,233,23,false,O'Reilly,data_science,Machine Learning for Hackers
+"Silver, Nate",tech,233,24,false,Penguin,data_science,"Signal and the Noise, The"
+"McKinney, Wes",tech,233,25,false,O'Reilly,data_science,Python for Data Analysis
+"Cormen, Thomas",tech,234,26,false,MIT Press,computer_science,Introduction to Algorithms
+"Deb, Siddhartha",nonfiction,198,27,false,Penguin,history,"Beautiful and the Damned, The"
+"Camus, Albert",fiction,198,28,false,Penguin,classic,"Outsider, The"
+"Doyle, Arthur Conan",fiction,176,29,false,Random House,classic,"Complete Sherlock Holmes, The - Vol I"
+"Doyle, Arthur Conan",fiction,176,30,false,Random House,classic,"Complete Sherlock Holmes, The - Vol II"
+"Smith, Adam",science,175,31,false,Random House,economics,"Wealth of Nations, The"
+"Follett, Ken",fiction,176,32,false,Random House,novel,"Pillars of the Earth, The"
+"Hitler, Adolf",nonfiction,212,33,false,Rupa,autobiography,Mein Kampf
+"Capra, Fritjof",science,179,34,false,Penguin,physics,"Tao of Physics, The"
+"Feynman, Richard",science,198,35,false,Random House,physics,Surely You're Joking Mr Feynman
+"Hemingway, Ernest",fiction,179,36,false,Rupa,classic,"Farewell to Arms, A"
+"Forsyth, Frederick",fiction,177,37,false,Transworld,novel,"Veteran, The"
+"Archer, Jeffery",fiction,177,38,false,Pan,novel,False Impressions
+"Pausch, Randy",nonfiction,197,39,false,Hyperion,autobiography,"Last Lecture, The"
+"Rand, Ayn",philosophy,202,40,false,Penguin,objectivism,Return of the Primitive
+"Crichton, Michael",fiction,174,41,false,Random House,novel,Jurassic Park
+"Steinbeck, John",nonfiction,196,42,false,Penguin,history,"Russian Journal, A"
+"Poe, Edgar Allen",fiction,172,43,false,HarperCollins,classic,Tales of Mystery and Imagination
+"Dubner, Stephen",science,197,44,false,Penguin,economics,Freakonomics
+"Capra, Fritjof",science,197,45,false,HarperCollins,physics,"Hidden Connections, The"
+"Durant, Will",philosophy,170,46,false,Pocket,history,"Story of Philosophy, The"
+"Deshpande, P L",fiction,205,47,false,Mauj,novel,Asami Asami
+"Steinbeck, John",fiction,196,48,false,Penguin,classic,Journal of a Novel
+"Steinbeck, John",nonfiction,196,49,false,Penguin,history,Once There Was a War
+"Steinbeck, John",fiction,196,50,false,Penguin,classic,"Moon is Down, The"
+"Grisham, John",fiction,174,51,false,Random House,novel,"Brethren, The"
+"Naipaul, V. S.",fiction,196,52,false,Rupa,novel,In a Free State
+"Heller, Joseph",fiction,178,53,false,Random House,classic,Catch 22
+BBC,nonfiction,178,54,false,BBC,trivia,"Complete Mastermind, The"
+"Dylan, Bob",nonfiction,197,55,false,Random House,autobiography,Dylan on Dylan
+"Gupta, Madan",tech,242,56,false,Elsevier,data_science,Soft Computing & Intelligent Systems
+"Stonier, Alfred",tech,242,57,false,Pearson,economics,Textbook of Economic Theory
+"Greene, W. H.",tech,242,58,false,Pearson,economics,Econometric Analysis
+"Bradsky, Gary",tech,232,59,false,O'Reilly,signal_processing,Learning OpenCV
+"Tanenbaum, Andrew",tech,235,60,false,Prentice Hall,computer_science,Data Structures Using C & C++
+"Forsyth, David",tech,255,61,false,Pearson,signal_processing,"Computer Vision, A Modern Approach"
+"Taub, Schilling",tech,240,62,false,TMH,signal_processing,Principles of Communication Systems
+"Kanetkar, Yashwant",tech,213,63,false,Prentice Hall,computer_science,Let Us C
+"Stroud, Jonathan",fiction,179,64,false,Random House,novel,"Amulet of Samarkand, The"
+"Dostoevsky, Fyodor",fiction,180,65,false,Penguin,classic,Crime and Punishment
+"Brown, Dan",fiction,178,66,false,Random House,novel,Angels & Demons
+"Sen, Amartya",nonfiction,209,67,false,Picador,history,"Argumentative Indian, The"
+"Ghosh, Amitav",fiction,197,68,false,Penguin,novel,Sea of Poppies
+"Sen, Amartya",philosophy,212,69,false,Penguin,economics,"Idea of Justice, The"
+"Hansberry, Lorraine",fiction,175,70,false,Penguin,novel,"Raisin in the Sun, A"
+"Woodward, Bob",nonfiction,177,71,false,Random House,history,All the President's Men
+"Archer, Jeffery",fiction,176,72,false,Pan,novel,"Prisoner of Birth, A"
+"Nayar, Kuldip",nonfiction,216,73,false,HarperCollins,history,Scoop!
+"Deshpande, Sunita",nonfiction,213,74,false,Mauj,autobiography,Ahe Manohar Tari
+"Dalrymple, William",nonfiction,199,75,false,Penguin,history,"Last Mughal, The"
+Various,tech,235,76,false,Springer,economics,"Social Choice & Welfare, Vol 39 No. 1"
+"Deshpande, P L",nonfiction,213,77,false,Mauj,misc,Radiowaril Bhashane & Shrutika
+"Deshpande, P L",nonfiction,212,78,false,Mauj,misc,Gun Gayin Awadi
+"Deshpande, P L",nonfiction,212,79,false,Mauj,misc,Aghal Paghal
+"Garg, Sanjay",nonfiction,221,80,false,Mauj,poetry,Maqta-e-Ghalib
+,philosophy,222,81,false,HarperCollins,education,Beyond Degrees
+"Kale, V P",nonfiction,213,82,false,Mauj,misc,Manasa
+"Tharoor, Shashi",nonfiction,198,83,false,Penguin,history,India from Midnight to Milennium
+,nonfiction,210,84,false,,history,"World's Greatest Trials, The"
+"Tharoor, Shashi",fiction,198,85,false,Penguin,novel,"Great Indian Novel, The"
+"Lapierre, Dominique",nonfiction,217,86,false,vikas,history,O Jerusalem!
+"Lapierre, Dominique",fiction,177,87,false,vikas,novel,"City of Joy, The"
+"Lapierre, Dominique",nonfiction,167,88,false,vikas,history,Freedom at Midnight
+"Steinbeck, John",fiction,196,89,false,Penguin,classic,"Winter of Our Discontent, The"
+"Russell, Bertrand",philosophy,203,90,false,Routledge,education,On Education
+"Harris, Sam",nonfiction,203,91,false,FreePress,psychology,Free Will
+"Tharoor, Shashi",nonfiction,206,92,false,Penguin,history,Bookless in Baghdad
+"Gardner, Earle Stanley",fiction,179,93,false,,novel,"Case of the Lame Canary, The"
+"Hawking, Stephen",science,217,94,false,Jaico,physics,"Theory of Everything, The"
+"Drucker, Peter",science,176,95,false,Penguin,economics,New Markets & Other Essays
+"Bodanis, David",science,201,96,false,Penguin,physics,Electric Universe
+"Hugo, Victor",fiction,175,97,false,Random House,classic,"Hunchback of Notre Dame, The"
+"Steinbeck, John",fiction,175,98,false,Penguin,classic,Burning Bright
+"Drucker, Peter",nonfiction,178,99,false,Random House,economics,"Age of Discontuinity, The"
+"Gordon, Richard",fiction,179,100,false,Penguin,novel,Doctor in the Nude
+"Orwell, George",nonfiction,179,101,false,Penguin,autobiography,Down and Out in Paris & London
+"Sen, Amartya",philosophy,219,102,false,Penguin,philosophy,Identity & Violence
+"Dalrymple, William",nonfiction,197,103,false,Random House,history,Beyond the Three Seas
+,fiction,217,104,false,Jaico,classic,"World's Greatest Short Stories, The"
+"Iacoca, Lee",nonfiction,175,105,false,,autobiography,Talking Straight
+"Maugham, William S",fiction,171,106,false,Vintage,classic,"Maugham's Collected Short Stories, Vol 3"
+"Forsyth, Frederick",fiction,180,107,false,,classic,"Phantom of Manhattan, The"
+"Maugham, William S",fiction,160,108,false,Vintage,classic,Ashenden of The British Agent
+"Pirsig, Robert",philosophy,172,109,false,Vintage,autobiography,Zen & The Art of Motorcycle Maintenance
+"Fisk, Robert",nonfiction,197,110,false,HarperCollins,history,"Great War for Civilization, The"
+"Rand, Ayn",fiction,178,111,false,Penguin,novel,We the Living
+"Aczel, Amir",science,186,112,false,HighStakes,mathematics,"Artist and the Mathematician, The"
+"Russell, Bertrand",philosophy,213,113,false,Routledge,philosophy,History of Western Philosophy
+,fiction,215,114,false,Jaico,classic,Selected Short Stories
+"Sen, Amartya",science,213,115,false,Springer,economics,Rationality & Freedom
+"Huntington, Samuel",nonfiction,228,116,false,Simon&Schuster,history,Clash of Civilizations and Remaking of the World Order
+"Capra, Fritjof",nonfiction,197,117,false,Fontana,anthology,Uncommon Wisdom
+"Bach, Richard",nonfiction,172,118,false,Dell,autobiography,One
+,nonfiction,162,119,false,,autobiography,Karl Marx Biography
+Braithwaite,fiction,197,120,false,Penguin,classic,To Sir With Love
+"Naipaul, V S",fiction,196,121,false,,novel,Half A Life
+"Nehru, Jawaharlal",nonfiction,230,122,false,,history,"Discovery of India, The"
+"Deshpande, P L",nonfiction,211,123,false,,misc,Apulki
+"Russell, Bertrand",philosophy,198,124,false,,philosophy,Unpopular Essays
+"Forsyth, Frederick",fiction,178,125,false,,novel,"Deceiver, The"
+"Woodward, Bob",nonfiction,171,126,false,,history,Veil: Secret Wars of the CIA
+"Deshpande, P L",nonfiction,214,127,false,,misc,Char Shabda
+"Durrell, Gerald",fiction,176,128,false,,novel,Rosy is My Relative
+"Maugham, William S",fiction,180,129,false,,classic,"Moon and Sixpence, The"
+,philosophy,162,130,false,,politics,Political Philosophers
+"Wells, H G",nonfiction,197,131,false,,history,"Short History of the World, A"
+"Maugham, William S",fiction,205,132,false,,novel,"Trembling of a Leaf, The"
+"Gordon, Richard",fiction,204,133,false,,novel,Doctor on the Brain
+"Singh, Simon",science,233,134,false,,mathematics,Simpsons & Their Mathematical Secrets
+"Duda, Hart",tech,241,135,false,,data_science,Pattern Classification
+"Friedman, Thomas",nonfiction,202,136,false,,history,From Beirut to Jerusalem
+"Singh, Simon",science,197,137,false,,mathematics,"Code Book, The"
+"Fisk, Robert",nonfiction,197,138,false,,history,"Age of the Warrior, The"
+,fiction,257,139,false,,comic,Final Crisis
+,fiction,283,140,false,,comic,"Killing Joke, The"
+,fiction,265,141,false,,comic,Flashpoint
+,fiction,265,142,false,,comic,Batman Earth One
+,fiction,258,143,false,,comic,Crisis on Infinite Earths
+"Devlin, Keith",science,202,144,false,,mathematics,"Numbers Behind Numb3rs, The"
+,fiction,259,145,false,,comic,Superman Earth One - 1
+,fiction,258,146,false,,comic,Superman Earth One - 2
+,fiction,258,147,false,,comic,Justice League: Throne of Atlantis
+,fiction,258,148,false,,comic,Justice League: The Villain's Journey
+,fiction,258,149,false,,comic,"Death of Superman, The"
+,fiction,258,150,false,,comic,History of the DC Universe
+,fiction,258,151,false,,comic,Batman: The Long Halloween
+"Steinbeck, John",nonfiction,196,152,false,,autobiography,"Life in Letters, A"
+"Gleick, James",science,233,153,false,,mathematics,"Information, The"
+,science,235,154,false,,economics,"Journal of Economics, vol 106 No 3"
+"Thomas, Joy",tech,229,155,false,,signal_processing,Elements of Information Theory
+"Rashid, Muhammad",tech,235,156,false,,computer_science,Power Electronics - Rashid
+"Mohan, Ned",tech,237,157,false,,computer_science,Power Electronics - Mohan
+"Haykin, Simon",tech,240,158,false,,data_science,Neural Networks
+"Steinbeck, John",fiction,196,159,false,,classic,"Grapes of Wrath, The"
+"Deshpande, P L",nonfiction,211,160,false,,misc,Vyakti ani Valli
+"Vapnik, Vladimir",tech,228,161,false,,data_science,Statistical Learning Theory
+"Rutherford, Alex",nonfiction,180,162,false,,history,Empire of the Mughal - The Tainted Throne
+"Rutherford, Alex",nonfiction,180,163,false,,history,Empire of the Mughal - Brothers at War
+"Rutherford, Alex",nonfiction,180,164,false,,history,Empire of the Mughal - Ruler of the World
+"Rutherford, Alex",nonfiction,180,165,false,,history,Empire of the Mughal - The Serpent's Tooth
+"Rutherford, Alex",nonfiction,180,166,false,,history,Empire of the Mughal - Raiders from the North
+"Baz-Zohar, Michael",nonfiction,236,167,false,,history,Mossad
+"Corbett, Jim",nonfiction,223,168,false,,history,Jim Corbett Omnibus
+"Verne, Jules",fiction,190,169,false,,novel,20000 Leagues Under the Sea
+Deshpande P L,fiction,200,170,false,,novel,Batatyachi Chal
+Deshpande P L,fiction,211,171,false,,novel,Hafasavnuk
+Deshpande P L,fiction,211,172,false,,novel,Urlasurla
+"Kanetkar, Yashwant",tech,213,173,false,,computer_science,Pointers in C
+"Raymond, Eric",tech,217,174,false,,computer_science,"Cathedral and the Bazaar, The"
+"Franco, Sergio",tech,240,175,false,,computer_science,Design with OpAmps
+"Downey, Allen",tech,230,176,false,,data_science,Think Complexity
+"West, Morris",fiction,178,177,false,,novel,"Devil's Advocate, The"
+"Rand, Ayn",philosophy,203,178,false,,objectivism,Ayn Rand Answers
+"Rand, Ayn",philosophy,171,179,false,,objectivism,Philosophy: Who Needs It
+,science,189,180,false,,physics,"World's Great Thinkers, The"
+"Janert, Phillip",tech,230,181,false,,data_science,Data Analysis with Open Source Tools
+"Sagan, Carl",science,174,182,false,,physics,Broca's Brain
+"Bell, E T",science,217,183,false,,mathematics,Men of Mathematics
+"Dawkins, Richard",science,240,184,false,,science,Oxford book of Modern Science Writing
+"Ranjan, Sudhanshu",nonfiction,224,185,false,,legal,"Justice, Judiciary and Democracy"
+Kautiyla,philosophy,214,186,false,,philosophy,"Arthashastra, The"
+Palkhivala,philosophy,216,187,false,,philosophy,We the People
+Palkhivala,philosophy,216,188,false,,philosophy,We the Nation
+Sorabjee,nonfiction,217,189,false,,autobiography,"Courtroom Genius, The"
+"Zaidi, Hussain",nonfiction,216,190,false,,history,Dongri to Dubai
+"Ackroyd, Peter",nonfiction,197,191,false,,history,"History of England, Foundation"
+"Dalrymple, William",nonfiction,198,192,false,,history,City of Djinns
+Nariman,nonfiction,177,193,false,,legal,India's Legal System
+"Sassoon, Jean",fiction,235,194,false,,novel,More Tears to Cry
+"Dickinson, Peter",fiction,196,195,false,,novel,"Ropemaker, The"
+"Brown, Dan",fiction,170,196,false,,novel,Angels & Demons
+,fiction,170,197,false,,novel,"Judge, The"
+,fiction,170,198,false,,novel,"Attorney, The"
+Machiavelli,fiction,173,199,false,,classic,"Prince, The"
+"Huxley, Aldous",fiction,180,200,false,,novel,Eyeless in Gaza
+"Rowling, J K",fiction,184,201,false,,novel,Tales of Beedle the Bard
+"Larsson, Steig",fiction,179,202,false,,novel,Girl with the Dragon Tattoo
+"Larsson, Steig",fiction,179,203,false,,novel,Girl who kicked the Hornet's Nest
+"Larsson, Steig",fiction,179,204,false,,novel,Girl who played with Fire
+,fiction,270,205,false,,comic,Batman Handbook
+,philosophy,178,206,false,,psychology,Murphy's Law
+"Tao, Terence",science,252,207,false,,mathematics,Structure and Randomness
+"Eddins, Steve",tech,241,208,false,,signal_processing,Image Processing with MATLAB
+"Orwell, George",fiction,180,209,false,,classic,Animal Farm
+"Dostoevsky, Fyodor",fiction,197,210,false,,classic,"Idiot, The"
+"Dickens, Charles",fiction,196,211,false,,classic,"Christmas Carol, A"

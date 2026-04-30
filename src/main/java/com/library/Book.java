@@ -4,6 +4,9 @@ import com.opencsv.bean.CsvBindByName;
 
 public class Book {
 
+    @CsvBindByName(column = "Id")
+    private int id;
+
     @CsvBindByName(column = "Title", required = true)
     private String title;
 
@@ -22,10 +25,8 @@ public class Book {
     @CsvBindByName(column = "Publisher")
     private String publisher;
 
-
-    private boolean isBorrowed = false;
-
-    private int id;
+    @CsvBindByName
+    private boolean isBorrowed;
 
     public int getId() {
         return id;
@@ -38,7 +39,6 @@ public class Book {
     public Book() {
 
     }
-
 
     public String getTitle() {
         return title;
