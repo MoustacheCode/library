@@ -84,13 +84,13 @@ public class Library {
 
     private boolean processReturn(User currentUser, Book book) {
 
-        // Not borrowed at all
+        // Not borrowed
         if (!book.isBorrowed()) {
             System.out.println("Here we are - It might be a bit dusty!");
             return false;
         }
 
-        // Borrowed by someone else
+        // Borrowed
         if (!book.getBorrowedByUsername().equals(currentUser.getUsername())) {
             System.out.println("Wait a minute...This book was borrowed by: "
                     + book.getBorrowedByUsername() + "!!");
