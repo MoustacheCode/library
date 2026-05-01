@@ -36,7 +36,7 @@ public class Book {
         this.id = id;
     }
 
-    public Book() {
+    public Book(int i, String number, String georgeOrwell, boolean b) {
 
     }
 
