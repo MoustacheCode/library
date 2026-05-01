@@ -28,6 +28,9 @@ public class Book {
     @CsvBindByName
     private boolean isBorrowed;
 
+    @CsvBindByName(column = "BorrowedByUsername")
+    private String borrowedByUsername;
+
     public Book() {
 
     }
@@ -98,6 +101,14 @@ public class Book {
 
     public void setIsBorrowed(boolean isBorrowed) {
         this.isBorrowed = isBorrowed;
+    }
+
+    public String getBorrowedByUsername() {
+        return borrowedByUsername;
+    }
+
+    public void setBorrowedByUsername(String borrowedByUsername) {
+        this.borrowedByUsername = borrowedByUsername;
     }
 
     public Book(int id, String title, String author, String genre, String subGenre, int height, String publisher, boolean isBorrowed) {

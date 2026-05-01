@@ -1,6 +1,8 @@
 package com.library;
 
 
+import com.library.user.User;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,6 +62,52 @@ public class Library {
         // no books found
         return false;
    }
+
+    public boolean returnBook(User currentUser, String title, int bookId) {
+
+        for (Book book : books) {
+
+            // 1. Match by ID
+            if (bookId > 0 && book.getId() == bookId) {
+                return processReturn(currentUser, book);
+            }
+
+            // 2. Match by title (partial match)
+            if (title != null && book.getTitle().toLowerCase().contains(title.toLowerCase())) {
+                return processReturn(currentUser, book);
+            }
+        }
+
+        System.out.println("Sorry - My dog ate this book! Is there anything else you'd like?");
+        return false;
+    }
+
+    private boolean processReturn(User currentUser, Book book) {
+
+        // Not borrowed at all
+        if (!book.isBorrowed()) {
+            System.out.println("Here we are - It might be a bit dusty!");
+            return false;
+        }
+
+        // Borrowed by someone else
+        if (!book.getBorrowedByUsername().equals(currentUser.getUsername())) {
+            System.out.println("Wait a minute...This book was borrowed by: "
+                    + book.getBorrowedByUsername() + "!!");
+            return false;
+        }
+
+        // Return the book
+        book.setIsBorrowed(false);
+        book.setBorrowedByUsername(null);
+
+        CsvUtils.saveBooks(books);
+
+        System.out.println("Thanks! I actually wanted to read " + book.getTitle());
+        return true;
+    }
+
+
 
 
 }
