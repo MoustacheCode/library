@@ -1,4 +1,4 @@
-package com.library;
+package com.library.user;
 
 public class User {
 

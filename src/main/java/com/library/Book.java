@@ -28,6 +28,10 @@ public class Book {
     @CsvBindByName
     private boolean isBorrowed;
 
+    public Book() {
+
+    }
+
     public int getId() {
         return id;
     }

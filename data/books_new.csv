@@ -53,7 +53,7 @@ Sebastian Gutierrez,tech,230,11,false,Apress,data_science,Data Scientists at Wor
 "Naipaul, V. S.",fiction,196,52,false,Rupa,novel,In a Free State
 "Heller, Joseph",fiction,178,53,false,Random House,classic,Catch 22
 BBC,nonfiction,178,54,false,BBC,trivia,"Complete Mastermind, The"
-"Dylan, Bob",nonfiction,197,55,false,Random House,autobiography,Dylan on Dylan
+"Dylan, Bob",nonfiction,197,55,true,Random House,autobiography,Dylan on Dylan
 "Gupta, Madan",tech,242,56,false,Elsevier,data_science,Soft Computing & Intelligent Systems
 "Stonier, Alfred",tech,242,57,false,Pearson,economics,Textbook of Economic Theory
 "Greene, W. H.",tech,242,58,false,Pearson,economics,Econometric Analysis
