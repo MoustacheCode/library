@@ -1,7 +1,7 @@
 com\library\LibraryApp.class
 com\library\Library.class
 com\library\Main.class
+com\library\user\UserManager.class
 com\library\user\User.class
-com\library\user\userManager.class
 com\library\Book.class
 com\library\CsvUtils.class

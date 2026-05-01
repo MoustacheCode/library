@@ -1,5 +1,6 @@
 package com.library;
 
+import com.library.user.User;
 import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
@@ -59,6 +60,28 @@ public class CsvUtils {
             e.printStackTrace();
         }
     }
+
+    public static List<User> loadUsers() {
+        try {
+            return new CsvToBeanBuilder<User>(new FileReader("users.csv"))
+                    .withType(User.class)
+                    .withIgnoreLeadingWhiteSpace(true)
+                    .build()
+                    .parse();
+        } catch (Exception e) {
+            return new ArrayList<>();
+        }
     }
+
+    public static void saveUsers(List<User> users) {
+        try (Writer writer = new FileWriter("users.csv")) {
+            StatefulBeanToCsv<User> beanToCsv = new StatefulBeanToCsvBuilder<User>(writer).build();
+            beanToCsv.write(users);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+}
 
 

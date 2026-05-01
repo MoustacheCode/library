@@ -29,7 +29,7 @@ Sebastian Gutierrez,tech,230,11,false,Apress,data_science,Data Scientists at Wor
 "Camus, Albert",fiction,198,28,false,Penguin,classic,"Outsider, The"
 "Doyle, Arthur Conan",fiction,176,29,false,Random House,classic,"Complete Sherlock Holmes, The - Vol I"
 "Doyle, Arthur Conan",fiction,176,30,false,Random House,classic,"Complete Sherlock Holmes, The - Vol II"
-"Smith, Adam",science,175,31,false,Random House,economics,"Wealth of Nations, The"
+"Smith, Adam",science,175,31,true,Random House,economics,"Wealth of Nations, The"
 "Follett, Ken",fiction,176,32,false,Random House,novel,"Pillars of the Earth, The"
 "Hitler, Adolf",nonfiction,212,33,false,Rupa,autobiography,Mein Kampf
 "Capra, Fritjof",science,179,34,false,Penguin,physics,"Tao of Physics, The"
