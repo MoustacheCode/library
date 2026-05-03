@@ -22,7 +22,8 @@ public class LibraryApp {
             System.out.println("[2] Search for a Book");
             System.out.println("[3] Create User");
             System.out.println("[4] Login");
-            System.out.println("[5] Exit");
+            System.out.println("[5] My Borrowed Books");
+            System.out.println("[6] Exit");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -87,8 +88,12 @@ public class LibraryApp {
                     System.out.println("Login successful!");
                     userMenu();
 
-
                 case 5:
+                    showMyBorrowedBooks(currentUser);
+                    break;
+
+
+                case 6:
                     System.out.println("Thanks for coming! Goodbye!");
                     running = false;
                     break;
