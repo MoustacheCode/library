@@ -43,9 +43,6 @@ public class Book {
         this.id = id;
     }
 
-    public Book(int i, String number, String georgeOrwell, boolean b) {
-
-    }
 
     public String getTitle() {
         return title;
@@ -111,7 +108,11 @@ public class Book {
         this.borrowedByUsername = borrowedByUsername;
     }
 
-    public Book(int id, String title, String author, String genre, String subGenre, int height, String publisher, boolean isBorrowed) {
+    public void setBorrowed(boolean borrowed) {
+        isBorrowed = borrowed;
+    }
+
+    public Book(int id, String title, String author, String genre, String subGenre, int height, String publisher, boolean isBorrowed, String borrowedByUsername) {
         this.title = title;
         this.author = author;
         this.genre = genre;
@@ -120,6 +121,7 @@ public class Book {
         this.publisher = publisher;
         this.isBorrowed = isBorrowed;
         this.id = id;
+        this.borrowedByUsername = borrowedByUsername;
     }
 
     @Override

@@ -3,6 +3,8 @@ package com.library;
 
 import com.library.user.User;
 import com.library.CsvUtils;
+
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -36,7 +38,7 @@ public class Library {
         return results;
     }
       //   Book Borrow Method - Create UI to wire up correctly
-    public boolean borrowBook(String title, int bookId) {
+    public boolean borrowBook(String title, int bookId, User user) {
         for (Book book : books) {
             // Match ID
             if (bookId > 0 && book.getId() == bookId) {
@@ -45,6 +47,7 @@ public class Library {
                 }
 
                 book.setIsBorrowed(true);
+                book.setBorrowedByUsername(user.getUsername());
                 return true;
 
             }
@@ -56,6 +59,7 @@ public class Library {
                 }
 
                 book.setIsBorrowed(true);
+                book.setBorrowedByUsername(user.getUsername());
                 return true; // success
             }
 
@@ -64,17 +68,12 @@ public class Library {
         return false;
    }
 
-    public boolean returnBook(User currentUser, String title, int bookId) {
+    public boolean returnBook(User currentUser, int bookId) {
 
         for (Book book : books) {
 
             // 1. Match by ID
             if (bookId > 0 && book.getId() == bookId) {
-                return processReturn(currentUser, book);
-            }
-
-            // 2. Match by title (partial match)
-            if (title != null && book.getTitle().toLowerCase().contains(title.toLowerCase())) {
                 return processReturn(currentUser, book);
             }
         }

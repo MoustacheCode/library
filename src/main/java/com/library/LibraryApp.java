@@ -165,7 +165,7 @@ public class LibraryApp {
                         title = borrow;
                     }
 
-                    boolean success = library.borrowBook(title, id); // When successful - Returns borrowBook method
+                    boolean success = library.borrowBook(title, id, user); // When successful - Returns borrowBook method
 
                     if (success) {
                         CsvUtils.saveBooks(library.getBooks());
@@ -179,6 +179,25 @@ public class LibraryApp {
 
                 case 3:
                     System.out.println("Which book are you returning?");
+                    String returnInput = scanner.nextLine();
+
+                    int returnId;
+
+                    try {
+                        returnId = Integer.parseInt(returnInput);
+                    } catch (NumberFormatException e) {
+                        System.out.println("Wrong ID, my friend");
+                        break;
+                    }
+
+                    boolean returned = library.returnBook(user, returnId);
+
+                    if (returned) {
+                        CsvUtils.saveBooks(library.getBooks());
+                        System.out.println("Thanks for returning!");
+                    } else {
+                        System.out.println("I think this book is actually in the back.");
+                    }
 
                     break;
 

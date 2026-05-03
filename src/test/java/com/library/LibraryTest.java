@@ -18,7 +18,8 @@ public class LibraryTest {
                 "Epic",
                 200,
                 "Test Publisher",
-                false
+                false,
+                "ron"
         ));
 
         // Create the library

@@ -11,7 +11,7 @@ AUTHOR,BORROWEDBYUSERNAME,GENRE,HEIGHT,ID,ISBORROWED,PUBLISHER,SUBGENRE,TITLE
 "Konnikova, Maria",,nonfiction,240,10,false,Penguin,psychology,How to Think Like Sherlock Holmes
 Sebastian Gutierrez,,tech,230,11,false,Apress,data_science,Data Scientists at Work
 "Vonnegut, Kurt",,fiction,198,12,false,Random House,classic,Slaughterhouse Five
-"Villani, Cedric",,science,234,13,false,Bodley Head,mathematics,Birth of a Theorem
+"Villani, Cedric",,science,234,13,true,Bodley Head,mathematics,Birth of a Theorem
 "Sussman, Gerald",,tech,240,14,false,MIT Press,computer_science,Structure & Interpretation of Computer Programs
 "Eraly, Abraham",,nonfiction,238,15,false,Penguin,history,"Age of Wrath, The"
 "Kafka, Frank",,fiction,198,16,false,Random House,classic,"Trial, The"
