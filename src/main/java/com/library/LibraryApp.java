@@ -1,10 +1,13 @@
 package com.library;
 
+import com.library.user.User;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 // Interface in Command Line
 public class LibraryApp {
+
 
     private Library library;
     private Scanner scanner = new Scanner(System.in);
@@ -89,7 +92,7 @@ public class LibraryApp {
                     userMenu();
 
                 case 5:
-                    showMyBorrowedBooks(currentUser);
+                    library.showMyBorrowedBooks(user);
                     break;
 
 

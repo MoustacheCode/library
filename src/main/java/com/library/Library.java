@@ -2,9 +2,10 @@ package com.library;
 
 
 import com.library.user.User;
-
+import com.library.CsvUtils;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 // Storing the books
 public class Library {
@@ -105,6 +106,30 @@ public class Library {
 
         System.out.println("Thanks! I actually wanted to read " + book.getTitle());
         return true;
+    }
+
+    // Show if book borrwed by user
+
+    public void showMyBorrowedBooks(User currentUser) {
+        System.out.println("|------|");
+        System.out.println("This book has been borrowed by: " +currentUser.getUsername());
+
+        boolean foundAny = false;
+
+        for (Book book : books) {
+            if (book.isBorrowed() && currentUser.getUsername().equals(book.getBorrowedByUsername())) {
+
+                System.out.println(book.getId() + " | " + book.getTitle() + " | " + book.getAuthor());
+                foundAny = true;
+            }
+        }
+
+        if (!foundAny) {
+            System.out.println("It looks like you haven't borrowed any books.");
+        }
+
+        System.out.println("Hit Enter to return to the menu..");
+        new Scanner(System.in).nextLine();
     }
 
 
