@@ -63,7 +63,7 @@ public class CsvUtils {
 
     public static List<User> loadUsers() {
         try {
-            return new CsvToBeanBuilder<User>(new FileReader("users.csv"))
+            return new CsvToBeanBuilder<User>(new FileReader("data/users.csv"))
                     .withType(User.class)
                     .withIgnoreLeadingWhiteSpace(true)
                     .build()
@@ -74,7 +74,7 @@ public class CsvUtils {
     }
 
     public static void saveUsers(List<User> users) {
-        try (Writer writer = new FileWriter("users.csv")) {
+        try (Writer writer = new FileWriter("data/users.csv")) {
             StatefulBeanToCsv<User> beanToCsv = new StatefulBeanToCsvBuilder<User>(writer).build();
             beanToCsv.write(users);
         } catch (Exception e) {

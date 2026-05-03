@@ -44,6 +44,15 @@ public class UserManager {
         return null;
     }
 
+    public User login(String username, String password) {
+        for (User user : users) {
+            if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
+                return user; // logged in
+            }
+        }
+        return null; // wrong details/ failed login
+    }
+
     public User validateLogin(String username, String password) {
         User u = findUserbyUsername(username);
         if (u != null && u.getPassword().equals(password)) {

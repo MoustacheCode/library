@@ -14,6 +14,7 @@ public class LibraryApp {
     private Scanner scanner = new Scanner(System.in);
 
     public LibraryApp(ArrayList<Book> books) {
+        this.userManager = new UserManager();
         this.library = new Library(books);
     }
 
@@ -70,7 +71,14 @@ public class LibraryApp {
                     System.out.println("Please enter a Password: ");
 
                     String passCreate = scanner.nextLine();
-                    System.out.println("User created!");
+
+                    boolean created = userManager.createUser(userCreate, passCreate, false);
+
+                    if (created) {
+                        System.out.println("User Created!");
+                    } else {
+                        System.out.println("Username already taken, Boss.");
+                    }
 
                     break;
 
@@ -85,7 +93,7 @@ public class LibraryApp {
                     System.out.println("Enter password: ");
                     String password = scanner.nextLine();
 
-                    User loggedInUser = userManager.login(username, password);
+                    User loggedInUser = userManager.validateLogin(username, password);
 
                     if (loggedInUser != null) {
                         System.out.println("Login successful!");
@@ -94,6 +102,7 @@ public class LibraryApp {
                     }
                     else {
                         System.out.println("Wait a minute...These details don't seem to be right");
+                        start();
                     }
 
 
