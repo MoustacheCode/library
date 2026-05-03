@@ -1,13 +1,14 @@
 package com.library;
 
 import com.library.user.User;
+import com.library.user.UserManager;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 // Interface in Command Line
 public class LibraryApp {
-
+    private UserManager userManager;
     private User user;
     private Library library;
     private Scanner scanner = new Scanner(System.in);
@@ -39,9 +40,6 @@ public class LibraryApp {
                     for (Book book : allBooks) {
                         System.out.println(book);
 
-                   //     if (next == 1) {
-                            // Flow to be added later
-                //        }
                     }
                     break;
 
@@ -87,8 +85,16 @@ public class LibraryApp {
                     System.out.println("Enter password: ");
                     String password = scanner.nextLine();
 
-                    System.out.println("Login successful!");
-                    userMenu();
+                    User loggedInUser = userManager.login(username, password);
+
+                    if (loggedInUser != null) {
+                        System.out.println("Login successful!");
+                        this.user = loggedInUser;
+                        userMenu();
+                    }
+                    else {
+                        System.out.println("Wait a minute...These details don't seem to be right");
+                    }
 
 
                 case 5:
