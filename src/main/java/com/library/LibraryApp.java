@@ -167,14 +167,16 @@ public class LibraryApp {
 
                     break;
 
-                case 4: loggedIn = false; break;
+                case 4:
+                    library.showMyBorrowedBooks(user);
+                    break;
+
+                case 5: loggedIn = false; break;
 
                 default:
                     throw new IllegalStateException("Invalid option");
 
-                case 5:
-                    library.showMyBorrowedBooks(user);
-                    break;
+
             }
         }
     }
