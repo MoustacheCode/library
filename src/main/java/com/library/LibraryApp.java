@@ -8,7 +8,7 @@ import java.util.Scanner;
 // Interface in Command Line
 public class LibraryApp {
 
-
+    private User user;
     private Library library;
     private Scanner scanner = new Scanner(System.in);
 
@@ -25,8 +25,7 @@ public class LibraryApp {
             System.out.println("[2] Search for a Book");
             System.out.println("[3] Create User");
             System.out.println("[4] Login");
-            System.out.println("[5] My Borrowed Books");
-            System.out.println("[6] Exit");
+            System.out.println("[5] Exit");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -91,12 +90,8 @@ public class LibraryApp {
                     System.out.println("Login successful!");
                     userMenu();
 
+
                 case 5:
-                    library.showMyBorrowedBooks(user);
-                    break;
-
-
-                case 6:
                     System.out.println("Thanks for coming! Goodbye!");
                     running = false;
                     break;
@@ -116,7 +111,8 @@ public class LibraryApp {
             System.out.println("[1] Search for a Book");
             System.out.println("[2] Borrow a Book");
             System.out.println("[3] Return a Book");
-            System.out.println("[4] Logout");
+            System.out.println("[4] My Borrowed Books");
+            System.out.println("[5] Logout");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -175,6 +171,10 @@ public class LibraryApp {
 
                 default:
                     throw new IllegalStateException("Invalid option");
+
+                case 5:
+                    library.showMyBorrowedBooks(user);
+                    break;
             }
         }
     }
